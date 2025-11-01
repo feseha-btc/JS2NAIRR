@@ -26,7 +26,10 @@ Preprocessing Utility: Creates fixed-length, overlapping oligonucleotide sequenc
 
 - get_longest_fasta.py 
 Preprocessing Utility: finds the longest fasta sequence from all_sequences.fasta to creates fixed-length, overlapping oligonucleotide sequences to use as the query for the searech on the master oligo file created from the large fasta input.
- 
+
+- convertMultiline2singleLine.sh
+Preprocessing Utility: flattens multiline fasta sequences into one line sequence for searching oligo matches using grep to verify oligos found by the main program.
+
 - run_workflow.sh 
 The master shell script used to execute the three Python components sequentially, managing file I/O and dependencies.
 
