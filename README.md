@@ -52,8 +52,11 @@ This folder can hold configuration files, license files, environment setup files
 
 🚀 Getting Started
 To run the pipeline, you will need Python 3 and PyTorch with CUDA support configured for your system.
-1. Place your source sequences (genome_source.fasta) and query sequences (queries.fasta) into the Data folder.
-2. Execute the main workflow script from the project root:
-3. bash Scripts/run_workflow.sh
-4. The final results will be available in the Data/final_cluster_report.csv.
+1. Place your source sequences (all_sequences.fasta)
+2. Create a query oligo set by running first find_longest_fasta.py and then the generate oligo script on it
+3. Alternately, provide your own query sequences named as (query_oligos.fasta) into the Data folder.
+4. Execute the main workflow script from the project root
+5. bash Scripts/run_workflow.sh
+6. The final results will be available in the Data/final_cluster_report.csv.
+7. The project is best used after attending the tutorial.
 
