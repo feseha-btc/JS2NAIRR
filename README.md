@@ -20,10 +20,16 @@ This directory contains all the Python and shell scripts that orchestrate the pi
 Filename Description
 - geminiSimpleCluster_GPU.py 
 Core Engine: The main Python script that handles data splitting, multi-GPU orchestration, and the tensor-based accelerated pattern matching algorithm. It can be internally adjusted to provide oligos with different lengths of 5’ or 3’ anchors as well as to skip from one-off overlap to two or three off overlaps.
+
 - generate_oligo.py 
 Preprocessing Utility: Creates fixed-length, overlapping oligonucleotide sequences from the large genomic input, preparing the master tensor for the GPU.
+
+- get_longest_fasta.py 
+Preprocessing Utility: finds the longest fasta sequence from all_sequences.fasta to creates fixed-length, overlapping oligonucleotide sequences to use as the query for the searech on the master oligo file created from the large fasta input.
+ 
 - run_workflow.sh 
 The master shell script used to execute the three Python components sequentially, managing file I/O and dependencies.
+
 - generate_report.py 
 Post-Processing Utility: Calculates the Percent Hit Value metric from the raw match counts and prepares the final, formatted output.A supplementary shell script for generating the final human-readable summary report and applying filtering rules (e.g., >= 95% verified hits).
 
