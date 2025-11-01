@@ -1,5 +1,6 @@
-# JS2NAIRR
-JS2NAIRR_FAA: GPU-Accelerated Degenerate Fuzzy Oligo Finder
+# JS2NAIRR  -  FOPS
+Fuzzy Oligo Primer Screening (FOPS): A GPU-Accelerated Degenerate Fuzzy Oligo Finder
+
 Project Overview
 This repository hosts the code, data, and documentation for the JS2NAIRR_FAA project, which implements a high-performance, GPU-accelerated pipeline for identifying optimal degenerate oligonucleotide probes/primers within massive sequence datasets. The core engine leverages PyTorch and CUDA to parallelize the sequence matching process, drastically reducing execution time for bioinformatics analyses.
 
@@ -44,9 +45,9 @@ This folder is reserved for all non-code written materials related to the projec
 
 4. miscellanewos
 This folder can hold configuration files, license files, environment setup files, or any other items that do not fit into the primary categories.
-• environment.yml or requirements.txt (for dependency management)
-• LICENSE file
-• Any temporary test data or logs.
+    • environment.yml or requirements.txt (for dependency management)
+    • LICENSE file
+    • Any temporary test data or logs.
 
 🚀 Getting Started
 To run the pipeline, you will need Python 3 and PyTorch with CUDA support configured for your system.
