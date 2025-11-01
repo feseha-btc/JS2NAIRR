@@ -40,11 +40,17 @@ Post-Processing Utility: Calculates the Percent Hit Value metric from the raw ma
 
 3. Documents
 This folder is reserved for all non-code written materials related to the project, including your tutorial, publication manuscript, and internal notes.
-• tutorial.md (or similar tutorial files)
 • manuscript_draft.tex (for the final publication)
 • flowchart.drawio (or other design diagrams)
 
-4. miscellanewos
+4. Tutorial
+This folder is reserved for all code, data and instructions pertaining to a tutorial aimed at introducing the tool to potential users.
+• tutorial.md (or similar tutorial files)
+• instructions on fetching data (NCBI, SRA)
+• parameter tweaking
+• parctice data
+
+5. miscellanewos
 This folder can hold configuration files, license files, environment setup files, or any other items that do not fit into the primary categories.
     • environment.yml or requirements.txt (for dependency management)
     • LICENSE file
