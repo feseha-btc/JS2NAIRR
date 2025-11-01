@@ -2,7 +2,8 @@
 Fuzzy Oligo Primer Screening (FOPS): A GPU-Accelerated Degenerate Fuzzy Oligo Finder
 
 Project Overview
-This repository hosts the code, data, and documentation for the JS2NAIRR_FAA project, which implements a high-performance, GPU-accelerated pipeline for identifying optimal degenerate oligonucleotide probes/primers within massive sequence datasets. The core engine leverages PyTorch and CUDA to parallelize the sequence matching process, drastically reducing execution time for bioinformatics analyses.
+
+This repository hosts the code, data, and documentation for the FOPS project, which implements a high-performance, GPU-accelerated pipeline for identifying optimal degenerate oligonucleotide probes/primers within massive sequence datasets. The core engine leverages PyTorch and CUDA to parallelize the sequence matching process, drastically reducing execution time for bioinformatics analyses.
 
 📂 Repository Structure
 The project is organized into the following four primary directories:
