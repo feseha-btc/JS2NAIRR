@@ -5,7 +5,7 @@
 
 This repository hosts the tar.gz  compressed tool which contains the scripts and data folders. The scripts contain all scripts required fro generating the fuzzy oligos where as the data folder contains a demo data from the Fungal 18S sequences.
 
-📂 ## Repository Structure
+## 📂 Repository Structure
 The project is organized into the following four primary directories:
 
 ## 1. FOPS_MAIN
@@ -39,7 +39,7 @@ This folder can hold configuration files, license files, environment setup files
     • LICENSE file
     • Any temporary test data or logs.
 
-🚀 # Getting Started
+# 🚀 Getting Started
 To use the tool, you will need Python3 and PyTorch with CUDA support configured for your system.
 The tool is also optimized for GPU processors.
 
