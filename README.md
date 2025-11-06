@@ -45,11 +45,23 @@ To use the tool, you will need Python3 and PyTorch with CUDA support configured 
 The tool is also optimized for GPU processors.
 
 1. Download the FOPS.tar.gz file to a convenient location.
-2. Uncompress it:   tar -xvzf FOPS.tar.gz which creates tje FOPS directory with all contents.
-3. Change directory to FOPS where you will see three things: the code_runner_FOPS.sh bash script, the data nd ascripts folders.
-4. Call the code runner script with a single file argument. The file should contain the names of the files (1 or more) one file per line for each file that vhas a collection of fasta sequences from which tue uswe desires to generate degenerate (fuzzy) oligos to use as PCR primers.
-5. Explore the data directory to understand the setup.
-6. Create a directory like my_data (forexample), put your sequence file(s) in it and call the coderunner like:  bash ../code_runner_FOPS.sh list_of_Files.txt
-7. Sit back and wait for the program to finish.
-8. Read the standard output and follow the file structures to get your oligos.
+   
+3. Uncompress it:   tar -xvzf FOPS.tar.gz which creates tje FOPS directory with all contents.
+   
+5. Change directory to FOPS where you will see three things:
+     i. the code_runner_FOPS.sh bash script,
+    ii. the data folder and
+   iii. scripts folders.
+   
+6. Call the code runner script with a single file argument as follows:
+        bash code_runner_FOPS.sh  files_list.txt
+    Where files_list.txt is a text file with the name(s) of multifasta file(s) (1 or more) with one file name per line
+    for each file that has a collection of fasta sequences from which the user desires to find degenerate (fuzzy) oligos to use as PCR primers.
+
+7. For ease of use
+    A) explore the data directory to understand the setup and replicate the work as follows:
+    B). Create a directory like my_data (forexample), put your sequence file(s) in it 
+    C). cd into my_data and call the code runner like this:  bash ../code_runner_FOPS.sh list_of_Files.txt
+8. Sit back and wait for the program to finish.
+9. Read the standard output and follow the file structures to get your oligos.
 
