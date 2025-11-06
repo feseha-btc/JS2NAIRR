@@ -23,17 +23,17 @@ When invoked with a file containing a list of fasta files, for each file in the 
 
 The resulting CSV file can be dowownloaded and opened with EXCEL to manually and visually curate the matching oligo candidates for the desired PCR setup. For each multi fasta file processed, you should see an analysis folder with time stamp inside which the HPV 90% filtered CSV files to analyze using excel.
   
-2. Documents
+## 2. Documents
    The Documents fiile contains non code documents related to the project.
 
-4. Tutorial
+## 3. Tutorial
 This folder is a work in progress and reserved for all code, data and instructions pertaining to a tutorial aimed at introducing the tool to potential users.
 • tutorial.md (or similar tutorial files)
 • instructions on fetching data (NCBI, SRA)
 • parameter tweaking
 • parctice data
 
-5. miscellanewos
+## 4. miscellanewos
 This folder can hold configuration files, license files, environment setup files, or any other items that do not fit into the primary categories.
     • environment.yml or requirements.txt (for dependency management)
     • LICENSE file
