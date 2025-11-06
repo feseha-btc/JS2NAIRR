@@ -14,19 +14,20 @@ This folder holds all scripts and demo data nedded to test the tool.
 A wrapper script - code_runner_FOPS.sh is provided to excute the tool from a single command.
 
 When invoked with a file containing a list of fasta files, for each file in the list it calls the following scripts in the order:
-  - Fops_get_longest_sequence.py  which selects the longest sequence of the input file and create file called longest_seq.fasta
-  - Fops_genetrate_oligos.py which takes both the input fasta file and the longest sequence just saved to file to create oligo nucleotides.
-  -     from longest_seq.fasta  it creates query_oligos.fasta
-  -     from the input file it creates master_oligos.fasta
-  - Fops_geminiSimpleCluster_GPU.py which takes query_oligos.fasta and master_oligos.fasta as input and creates the list of query oligos that matched to the master_oligos.file. This will produce a dynamically named file with the results.
-  - Fops_generate_report.py on the resulting dynamically created results file to reduce the matches to those that have 90% or better match scores.
+  1. Fops_get_longest_sequence.py  which selects the longest sequence of the input file and create file called longest_seq.fasta
+  2. Fops_genetrate_oligos.py which takes both the input fasta file and the longest sequence just saved to file to create oligo nucleotides.
+      - from longest_seq.fasta  it creates query_oligos.fasta
+      - from the input file it creates master_oligos.fasta
+  3. Fops_geminiSimpleCluster_GPU.py which takes query_oligos.fasta and master_oligos.fasta as input and creates the list of query oligos that matched to the master_oligos.file. This will produce a dynamically named file with the results.
+  4. Fops_generate_report.py on the resulting dynamically created results file to reduce the matches to those that have 90% or better match scores.
 
-The resulting CSV file can be dowownloaded and opened with EXCEL to manually and visually curate the matching oligo candidates for the desired PCR setup.
+The resulting CSV file can be dowownloaded and opened with EXCEL to manually and visually curate the matching oligo candidates for the desired PCR setup. For each multi fasta file processed, you should see an analysis folder with time stamp inside which the HPV 90% filtered CSV files to analyze using excel.
   
 2. Documents
+   The Documents fiile contains non code documents related to the project.
 
-3. Tutorial
-This folder is reserved for all code, data and instructions pertaining to a tutorial aimed at introducing the tool to potential users.
+4. Tutorial
+This folder is a work in progress and reserved for all code, data and instructions pertaining to a tutorial aimed at introducing the tool to potential users.
 • tutorial.md (or similar tutorial files)
 • instructions on fetching data (NCBI, SRA)
 • parameter tweaking
@@ -38,13 +39,16 @@ This folder can hold configuration files, license files, environment setup files
     • LICENSE file
     • Any temporary test data or logs.
 
-🚀 Getting Started
-To run the pipeline, you will need Python 3 and PyTorch with CUDA support configured for your system.
-1. Place your source sequences (all_sequences.fasta)
-2. Create a query oligo set by running first find_longest_fasta.py and then the generate oligo script on it
-3. Alternately, provide your own query sequences named as (query_oligos.fasta) into the Data folder.
-4. Execute the main workflow script from the project root
-5. bash Scripts/run_workflow.sh
-6. The final results will be available in the Data/final_cluster_report.csv.
-7. The project is best used after attending the tutorial.
+🚀 # Getting Started
+To use the tool, you will need Python3 and PyTorch with CUDA support configured for your system.
+The tool is also optimized for GPU processors.
+
+1. Download the FOPS.tar.gz file to a convenient location.
+2. Uncompress it:   tar -xvzf FOPS.tar.gz which creates tje FOPS directory with all contents.
+3. Change directory to FOPS where you will see three things: the code_runner_FOPS.sh bash script, the data nd ascripts folders.
+4. Call the code runner script with a single file argument. The file should contain the names of the files (1 or more) one file per line for each file that vhas a collection of fasta sequences from which tue uswe desires to generate degenerate (fuzzy) oligos to use as PCR primers.
+5. Explore the data directory to understand the setup.
+6. Create a directory like my_data (forexample), put your sequence file(s) in it and call the coderunner like:  bash ../code_runner_FOPS.sh list_of_Files.txt
+7. Sit back and wait for the program to finish.
+8. Read the standard output and follow the file structures to get your oligos.
 
