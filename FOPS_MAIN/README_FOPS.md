@@ -1,11 +1,9 @@
-FOPS MAIN 
-# Example headings
+ 
+# FOPS MAIN
 
-## Sample Section
+## Tool requirements
 
-## This'll be a _Helpful_ Section About the Greek Letter Θ!
-A heading containing characters not allowed in fragments, UTF-8 characters, two consecutive spaces between the first and second words, and formatting.
-This folder contains the tar file that has all scripts and the wrapper script.
+## The FOPS tool requires a Linux environment with at least 4 GPUs and 400GB RAM and PyTorch installed.
 To use it down load to a Linyx machine with at least 20GB space and GPU processors and 200-400GB RAM.
 Befotre use check if torch is installed in one of the many ways shown below and install torch in your preferred method.
 To check the installed PyTorch version, use one of the following methods:
