@@ -28,15 +28,22 @@ The resulting CSV file can be dowownloaded and opened with EXCEL to manually and
 
 ## 3. Tutorial
 This folder is a work in progress and reserved for all code, data and instructions pertaining to a tutorial aimed at introducing the tool to potential users.
+
 • tutorial.md (or similar tutorial files)
+
 • instructions on fetching data (NCBI, SRA)
+
 • parameter tweaking
+
 • parctice data
 
 ## 4. miscellanewos
 This folder can hold configuration files, license files, environment setup files, or any other items that do not fit into the primary categories.
+
     • environment.yml or requirements.txt (for dependency management)
+    
     • LICENSE file
+    
     • Any temporary test data or logs.
 
 # Getting Started 🚀 
