@@ -59,9 +59,13 @@ The tool is also optimized for GPU processors.
     for each file that has a collection of fasta sequences from which the user desires to find degenerate (fuzzy) oligos to use as PCR primers.
 
 7. For ease of use
-    A) explore the data directory to understand the setup and replicate the work as follows:
-    B). Create a directory like my_data (forexample), put your sequence file(s) in it 
+   
+    A). explore the data directory to understand the setup and replicate the work as follows:
+   
+    B). Create a directory like my_data (forexample), put your sequence file(s) in it
+   
     C). cd into my_data and call the code runner like this:  bash ../code_runner_FOPS.sh list_of_Files.txt
-8. Sit back and wait for the program to finish.
-9. Read the standard output and follow the file structures to get your oligos.
+   
+9. Sit back and wait for the program to finish.
+10. Read the standard output and follow the file structures to get your oligos.
 
