@@ -62,9 +62,11 @@ The tool is also optimized for GPU processors.
    
     A). explore the data directory to understand the setup and replicate the work as follows:
    
-    B). Create a directory like my_data (forexample), put your sequence file(s) in it
+    B). Create a directory like my_data (for example), and put your sequences file(s) in it
+
+    C). Create a text file e.g. list_of_fasta_files.txt
    
-    C). cd into my_data and call the code runner like this:  bash ../code_runner_FOPS.sh list_of_Files.txt
+    C). cd into my_data and call the code runner like this:  bash ../code_runner_FOPS.sh list_of_fasta_files.txt
    
 9. Sit back and wait for the program to finish.
 10. Read the standard output and follow the file structures to get your oligos.
